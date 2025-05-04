@@ -1,7 +1,7 @@
-import ApplicationLogo from "@/Components/ApplicationLogo";
-import { Link } from "@inertiajs/react";
+// import ApplicationLogo from "@/Components/ApplicationLogo";
+// import { Link } from "@inertiajs/react";
 
-export default function BootstrapLayout({ children }) {
+export default function BootstrapLayout({ children } : any) {
     return (
         <div>
             {/* style */}
@@ -9,7 +9,7 @@ export default function BootstrapLayout({ children }) {
                 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
                 rel="stylesheet"
                 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-                crossorigin="anonymous"
+                crossOrigin="anonymous"
             ></link>
             <link
                 rel="stylesheet"
@@ -124,7 +124,7 @@ export default function BootstrapLayout({ children }) {
                         className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
                     >
                         <i
-                            class="bi-bootstrap-fill"
+                            className="bi-bootstrap-fill"
                             style={{ fontSize: 30 }}
                         ></i>
                     </a>
@@ -176,7 +176,7 @@ export default function BootstrapLayout({ children }) {
             <script
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"
+                crossOrigin="anonymous"
             ></script>
         </div>
     );
