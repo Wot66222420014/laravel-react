@@ -3,13 +3,13 @@ import { Head } from "@inertiajs/react";
 import React, { useState, useEffect } from "react";
 
 function InfiniteScrollExample() {
-    const [data, setData] = useState([]); // เก็บข้อมูล
+    const [data, setData] = useState<any[]>([]); // เก็บข้อมูล
     const [page, setPage] = useState(1); // เก็บหน้าเพจ
     const [loading, setLoading] = useState(false); // ตรวจสอบสถานะการโหลด
     const [hasMore, setHasMore] = useState(true); // ตรวจสอบว่ามีข้อมูลอีกไหม
 
     // ฟังก์ชัน fetch data
-    const fetchData = async (pageNum:any) => {
+    const fetchData = async (pageNum : any) => {
         setLoading(true);
         try {
             const response = await fetch(
@@ -64,7 +64,7 @@ function InfiniteScrollExample() {
                                     <h5 className="card-title">{item.title}</h5>
                                     <p className="card-text">{ item.body }</p>
                                 </div>
-                                <button className="btn btn-danger" onClick={() => removeItem(index)}> <i className="bi bi-trash"></i> Remove </button>
+                                <button className="btn btn-danger"> <i className="bi bi-trash"></i> Remove </button>
                             </div>
                         </div>
                     ))}
